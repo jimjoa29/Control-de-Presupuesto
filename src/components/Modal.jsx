@@ -110,6 +110,7 @@ const Modal = ({
         <input
           type="submit"
           value={gastoEditar.nombre ? "Guardar Cambios" : "Añadir Gasto"}
+          className="modal-boton"
         />
       </form>
     </div>
