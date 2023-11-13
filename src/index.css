@@ -80,6 +80,7 @@ header h1 {
 .formulario .campo {
     display: grid;
     margin-bottom: 2rem;
+    
 }
 
 .formulario label {
@@ -97,6 +98,7 @@ header h1 {
     border: none;
     flex: 1;
     font-size: 1.6rem;
+    overflow: hidden;
 }
 .formulario input[type="submit"] {
     background-color: #1048a4;
@@ -144,8 +146,6 @@ header h1 {
     background-color: var(--blanco);
     border-left: 5px solid #b91c1c;
     color: #b91c1c;
-}
-.alerta.success {
 }
 
 .contenedor {
@@ -235,10 +235,20 @@ main {
     padding-top: 10rem;
 }
 
+
+
 .filtros .campo {
     display: flex;
     align-items: center;
     gap: 2rem;
+    flex-direction: column;
+    
+}
+
+@media (min-width: 768px) {
+    .filtros .campo {
+        flex-direction: row;
+    }
 }
 .filtros label {
     font-size: 3rem;
@@ -252,6 +262,7 @@ main {
     border-radius: 1rem;
     text-align: center;
     background-color: var(--gris-claro);
+    
 }
 
 .listado-gastos {
